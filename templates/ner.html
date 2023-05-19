@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form action="/perform_ner" method="post">
+
+      <label>Type your text year</label><br>
+      <textarea name="ner_text"></textarea><br>
+      <input type="submit" value="Perform NER">
+  </form>
+
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
